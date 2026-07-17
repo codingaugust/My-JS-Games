@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My JS Games</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My JS Games</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:800px;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+p{
+    color:#cbd5e1;
+    margin-bottom:40px;
+}
+
+.games{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    margin-top:40px;
+    color:#94a3b8;
+}
+</style>
+
 </head>
 <body>
-    <h1>🎮 My JS Games</h1>
 
-    <a href="tic-tac-toe/">Play Tic Tac Toe</a>
-    <br><br>
+<div class="container">
 
-    <a href="rock-paper-scissors/">Play Rock Paper Scissors</a>
+<h1>🎮 My JS Games</h1>
+
+<p>Welcome! Play my JavaScript games created using HTML, CSS & JavaScript.</p>
+
+<div class="games">
+
+<div class="card">
+<h2>⭕ Tic Tac Toe</h2>
+<p>Challenge your friend in the classic Tic Tac Toe game.</p>
+<a href="tic-tac-toe/" class="btn">Play Game</a>
+</div>
+
+<div class="card">
+<h2>✊✋✌ Rock Paper Scissors</h2>
+<p>Play against the computer and test your luck.</p>
+<a href="rock-paper-scissors/" class="btn">Play Game</a>
+</div>
+
+</div>
+
+<footer>
+Made by <strong>August Rav</strong> 💙
+</footer>
+
+</div>
+
 </body>
 </html>
