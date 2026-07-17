@@ -5,7 +5,7 @@ let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 let turnO = true; // playerA, playerS
-let count = 0; // 👈 Yeh nayi line add karein
+let count = 0; // add new line
 
 const winPatterns =[
     [0, 1, 2],
