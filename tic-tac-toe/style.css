@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #8da8a4;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 10vmin;                             
+    color: #dbe64c;                                
+    text-transform: uppercase;                   
+    letter-spacing: 3px;                           
+    margin-top: 20px;                              
+    text-shadow: 2px 2px 4px rgba(14, 15, 0, 0.5), 
+                 0 0 10px rgba(83, 116, 7, 0.5); 
+}
+
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgb(43, 41, 41);
+    font-size: 8vmin;
+    color: rgb(77, 77, 70);
+    background-color: #f8e6d5;
+}
+#reset-btn {           
+    border-radius: 50%;
+    border: 1px solid rgb(136, 3, 3);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;                
+    height: 100px;
+    margin: 10px;          
+}
+
+.btn-img {
+    width: 100%;               
+    height: 100%;
+    border-radius: 50%;         
+    object-fit: cover;          
+}
+
+
+#reset-btn:hover {
+    transform: scale(1.05);           
+    transition: all 0.2s ease;         
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(47, 226, 12);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.color-S {
+    color: #ff0505; 
+}
+.color-A {
+    color: #0031d3;
+}
+
